@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.434);
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    z-index: 2;
+}
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.hand i{
+    position: absolute;
+    background-color:var(--clr);
+    width: 4px;
+    height: var(--h);
+    border-radius: 8px;
+}
